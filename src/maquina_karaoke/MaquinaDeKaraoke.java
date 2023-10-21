@@ -2,11 +2,9 @@ package maquina_karaoke;
 import java.util.LinkedList;
 import java.util.Scanner;
 public class MaquinaDeKaraoke {
-	
-		private String musica;
-		private LinkedList<String> lista = new LinkedList<String>();
-		private Scanner sc = new Scanner(System.in);
-		
+	private String musica;
+	private LinkedList<String> lista = new LinkedList<String>();
+	private Scanner sc = new Scanner(System.in);
 		public void adicionaMusica() {
 			int i = 0;
 			
@@ -22,7 +20,6 @@ public class MaquinaDeKaraoke {
 			System.out.println("Lista de músicas"+lista);
 			
 		}
-
 		public void tocaMusica() {
 			System.out.println("Tocando Música:"+lista.getFirst());
 			lista.removeFirst();
